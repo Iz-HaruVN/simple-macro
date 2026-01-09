@@ -3,5 +3,6 @@
     "random_delay": 10,
     "keybind": "Q",
     "mouse_button_hold_time": 40,
-    "anti_loop": true
+    "anti_loop": true,
+    "print_debug_info": true
 }
