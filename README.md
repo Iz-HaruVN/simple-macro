@@ -38,9 +38,12 @@ This file controls macro timing and the activation key.
 
 ```json
 {
-    "delay": 100,
-    "random_delay": 50,
-    "keybind": "q"
+    "delay": 25,
+    "random_delay": 10,
+    "keybind": "Q",
+    "mouse_button_hold_time": 40,
+    "anti_loop": true,
+    "print_debug_info": false
 }
 ```
 
@@ -48,9 +51,12 @@ This file controls macro timing and the activation key.
 
 | Field          | Type    | Description |
 |----------------|---------|-------------|
-| `delay`        | number  | Base delay (milliseconds) between actions |
-| `random_delay` | number  | Additional random delay (0 → random_delay) |
-| `keybind`      | string  | Key used to toggle the macro on/off |
+| `delay`        | int  | Base delay (milliseconds) between actions |
+| `random_delay` | int  | Additional random delay (0 → random_delay) |
+| `keybind`      | string  | Key used to trigger the macro |
+| `mouse_button_hold_time` | int | Base time between press and reslease mouse button |
+| `anti_loop` | bool | is the value is `true` mean user have to reslease before triggering a new task |
+| `print_debug_info` | bool | toggle printing logs to console (turn off for better performance) |
 
 **Final delay formula:**
 ```
