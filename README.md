@@ -55,7 +55,7 @@ This file controls macro timing and the activation key.
 | `random_delay` | int  | Additional random delay (0 → random_delay) |
 | `keybind`      | string  | Key used to trigger the macro |
 | `mouse_button_hold_time` | int | Base time between press and reslease mouse button |
-| `anti_loop` | bool | is the value is `true` mean user have to reslease before triggering a new task |
+| `anti_loop` | bool | if the value is `true` mean user have to reslease the keybind button before triggering a new task |
 | `print_debug_info` | bool | toggle printing logs to console (turn off for better performance) |
 
 **Final delay formula:**
